@@ -31,7 +31,7 @@ namespace HeAesCmac {
                                std::vector<helib::Ctxt> &output) const;
             void heAesCmac(CmacKeysCtxt const &key,
                            std::vector<helib::Ctxt> const &input,
-                           bool padded,
+                           helib::Ctxt const &padded,
                            helib::Ctxt &output) const;
             
     };
